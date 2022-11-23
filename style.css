@@ -1,55 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
-    /* primary colors */
-    --dark-cyan: hsl(185, 75%, 39%);
-    --very-dark-de-blue: hsl(229, 23%, 23%);
-    --dark-grayish-blue: hsl(227, 10%, 46%);
+  /* primary colors */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-de-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
 
-    /* neutral colors */
-    --white: hsl(0, 0%, 100%);
-    --dark-gray: hsl(227, 10%, 46%);
-    
+  /* neutral colors */
+  --white: hsl(0, 0%, 100%);
+  --dark-gray: hsl(227, 10%, 46%);
 }
 
 *,
 *::before,
 *::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
 
 html,
 body {
-    height: 100vh;
+  height: 100vh;
 }
 
-
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 14px;
-    color: var(--dark-gray);
-    overflow: hidden;
-    font-weight: 400;
-
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 14px;
+  color: var(--dark-gray);
+  overflow: hidden;
+  font-weight: 400;
 }
 
 img,
 picture,
 svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 p,
@@ -59,125 +55,117 @@ h3,
 h4,
 h5,
 h6 {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: var(--dark-cyan);
-    position: relative;
-    padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--dark-cyan);
+  position: relative;
+  padding: 1rem;
 }
 
 .top-bg {
-    position: absolute;
-    background-image: url("./images/bg-pattern-top.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 978px;
-    height: 978px;
-    top: -600px;
-    left: -750px;
+  position: absolute;
+  background-image: url("./images/bg-pattern-top.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 978px;
+  height: 978px;
+  top: -600px;
+  left: -750px;
 }
 
 .bottom-bg {
-    position: absolute;
-    background-image: url("./images/bg-pattern-top.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 978px;
-    height: 978px;
-    bottom: -700px;
-    right: -600px;
-    
+  position: absolute;
+  background-image: url("./images/bg-pattern-top.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 978px;
+  height: 978px;
+  bottom: -700px;
+  right: -600px;
 }
 
 .card {
-    z-index: 99;
-    width: 350px;
-    height: 100%;
-    background-color: var(--white);
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    /* border: 1px solid red; */
-    text-align: center;
+  z-index: 99;
+  width: 350px;
+  height: 100%;
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
 }
 
 .card-bg {
-    background-image: url("./images/bg-pattern-card.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 149px;
-    width: 100%;
-    
+  background-image: url("./images/bg-pattern-card.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 149px;
+  width: 100%;
 }
 
 .card img {
-    position: absolute;
-    transform: translate(-50%);
-    top: 96px;
-    left: 50%;
-    border: 5px solid var(--white);
-    border-radius: 50%;
-    background-color: var(--white);
-   
+  position: absolute;
+  transform: translate(-50%);
+  top: 96px;
+  left: 50%;
+  border: 5px solid var(--white);
+  border-radius: 50%;
+  background-color: var(--white);
 }
 
 .top-profile {
-    margin-top: 65px;
+  margin-top: 65px;
 }
 
 .top-profile p {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .top-profile h1 {
-    color: black;
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
+  color: black;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
 
 .top-profile span {
-    color: var(--dark-gray);
-    font-weight: 400;
-    padding-left: 0.3rem;
+  color: var(--dark-gray);
+  font-weight: 400;
+  padding-left: 0.3rem;
 }
 
-
 .bottom-stats {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 1rem 1.5rem 1.5rem 1.5rem;
-    border-top: 1px solid #E8E9EC;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  border-top: 1px solid #e8e9ec;
 }
 
 .bottom-stats h2 {
-    color: black;
-    font-size: 1.1rem;
-    font-weight: 700;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 @media (min-width: 400px) {
-    .top-bg {
+  .top-bg {
+    width: 978px;
+    height: 978px;
+    top: -320px;
+    left: -270px;
+  }
 
-        width: 978px;
-        height: 978px;
-        top: -320px;
-        left: -270px;
-    }
-
-    .bottom-bg {
-      
-        width: 978px;
-        height: 978px;
-        bottom: -370px;
-        right: -280px;
-        
-    }
-}    
+  .bottom-bg {
+    width: 978px;
+    height: 978px;
+    bottom: -370px;
+    right: -280px;
+  }
+}
