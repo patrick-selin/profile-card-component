@@ -6,7 +6,7 @@
 
 ### Screenshot
 
-![solution](d)
+![solution](https://github.com/patrick-selin/profile-card-component/blob/main/design/profile-card-component-solution.png)
 
 
 ### Links
